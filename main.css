@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+body {
+    width: 100%;
+     background: #30454c;
+    
+}
+
+
+
+/*    */
+ 
+.front {
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: aqua;
+    position: absolute;
+    
+}
+
+
+
+.back {
+  background: #eaeaed;
+  backface-visibility: hidden;
+  height: 100%;
+  color: #0087cc;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.board {
+     transform-style: preserve-3d; /* nested elements will be in 3d */
+    transition: all 1s ease-in-out;
+    position: absolute; 
+    width: 200%;
+    height: 100%;
+  
+}
+
+.flip {
+     cursor: pointer;
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 300px;
+    
+}
+
+
+.board:hover  {
+    transform: rotateY(180deg);
+    
+    
+    
+}
+
+/* Seperate */
+
+#container {
+    width:400px;
+    margin: 0 auto;
+    margin-top: 90px;
+    height: auto;
+    background: #150149;
+    position: relative;
+    padding: 0;
+    padding-bottom: 50px;
+    padding-top: 30px;
+   
+    
+}
+
+#screen {
+    width: 52%;
+    height: 30px;
+    margin:  0 auto;
+    margin-bottom: 50px;
+    padding-right: 56px;
+    background-color: aliceblue;
+    
+    
+}
+
+#keypad {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+    padding-left:60px;
+    
+}
+
+#keypad input {
+    text-align: center;
+    width:50px;
+    font-size: 15px;
+    padding: 15px;
+    margin: 5px;
+    background-color: darkgrey;
+    
+}
+
+#display {
+    text-align: right;
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+
+
+
+

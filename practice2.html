@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Pactice 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <script src="practice2.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="screen">
+            <input type="text" id="display" disabled style="height:50px; width:260px">
+           
+
+            <p id="result"></p>
+        </div>
+<div id="keypad">  
+    <input type="button" value="&larr;">
+    <input type="button" value="CE" onclick="clearAll()">
+    <input type="button" value="^" onclick="storeNum('^')">
+    <input type="button" value="+" onclick="storeNum('+')">   
+    <br>
+    <input type="button" value="9" onclick="display('9')">
+    <input type="button" value="8" onclick="display('8')">
+    <input type="button" value="7" onclick="display('7')">
+    <input type="button" value="-" onclick="storeNum('-')">   
+    <br>
+    <input type="button" value="6" onclick="display('6')">
+    <input type="button" value="5" onclick="display('5')">
+    <input type="button" value="4" onclick="display('4')">
+    <input type="button" value="*" onclick="storeNum('*')">
+    <br>
+    <input type="button" value="3" onclick="display('3')">
+    <input type="button" value="2" onclick="display('2')">
+    <input type="button" value="1" onclick="display('1')">
+    <input type="button" value="/" onclick="storeNum('/')">
+    <br>
+    <input type="button"  value="0" onclick="display('0')">
+    <input type="button" value="." onclick="display('.')">
+    <input id="equal" type="button" value="=" onclick="mathCalculation()" style="height:50px; width:115px">
+    
+  </div>  
+    </div>
+
+</body>
+</html>
